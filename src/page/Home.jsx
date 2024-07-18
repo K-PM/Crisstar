@@ -219,7 +219,8 @@ function Home() {
 
           <a href="https://x.com/crisstarSft">
             <img
-              alt="twitter"
+              alt="twitter" 
+              href="./src//assets//logoCriss.png"
               src="src\assets\twitter.png"
               width={158}
               height={48}
