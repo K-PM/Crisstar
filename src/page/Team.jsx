@@ -5,19 +5,19 @@ const people = [
         name: 'Larissa Hilario Clemente',
         role: 'Mobile developer',
         imageUrl:
-          'src/assets/larissa.jpg',
+          'public/assets/larissa.jpg',
       },
     {
     name: 'Crescencio Pérez Santiz',
     role: 'Back-end developer',
     imageUrl:
-        'src/assets/crescencio.jpeg',
+        'public/assets/crescencio.jpeg',
     },
     {
     name: 'Kristell Pérez Mateos',
     role: 'Project manager',
     imageUrl:
-        'src/assets/kristell.png',
+        'public/assets/kristell.png',
     },
   ]
   

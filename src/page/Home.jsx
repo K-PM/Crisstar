@@ -21,7 +21,7 @@ function Home() {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="src/assets/logoCriss.png"
+                src="public/assets/logoCriss.png"
                 className="h-12 w-auto"
               />
             </a>
@@ -55,7 +55,7 @@ function Home() {
                 <span className="sr-only">Crisstar</span>
                 <img
                   alt=""
-                  src="src/assets/logoCriss.png"
+                  src="public/assets/logoCriss.png"
                   className="h-8 w-auto"
                 />
               </a>
@@ -200,7 +200,7 @@ function Home() {
           <a href="https://www.facebook.com/profile.php?id=61562362614037">
           <img
             alt="facebook"
-            src="src\assets\facebook.png"
+            src="public/assets/facebook.png"
             width={158}
             height={48}
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
@@ -221,7 +221,7 @@ function Home() {
             <img
               alt="twitter" 
               href="./src//assets//logoCriss.png"
-              src="src\assets\twitter.png"
+              src="public/assets/twitter.png"
               width={158}
               height={48}
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
@@ -231,7 +231,7 @@ function Home() {
           <a href="">
           <img
             alt="Instagram"
-            src="src\assets\instagram.png"
+            src="public/assets/instagram.png"
             width={158}
             height={48}
             className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
@@ -240,7 +240,7 @@ function Home() {
           <a href="https://www.linkedin.com/in/crisstar-software/">
             <img
               alt="Linkedin"
-              src="src\assets\linkedin.png"
+              src="public/assets/linkedin.png"
               width={158}
               height={48}
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
