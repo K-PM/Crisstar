@@ -1,13 +1,10 @@
-
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-import Team from './Team'
-
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">
@@ -33,10 +30,11 @@ function Home() {
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
+          <Link to="/resQbite">prueba1</Link>
           <div className="hidden lg:flex lg:gap-x-12">
-              <a key='Product' href='/resQbite' className="text-sm font-semibold leading-6 text-gray-900">
-                Product
-              </a>
+            <Link to="/resQbite" className="text-sm font-semibold leading-6 text-gray-900">
+              Product
+            </Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             
@@ -66,15 +64,12 @@ function Home() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  
-                    <a
-                      key='Product'
-                      href='/resQbite'
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      Producto
-                    </a>
-                 
+                  <Link
+                    to="/resQbite"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Producto
+                  </Link>
                 </div>
                 
               </div>
@@ -102,8 +97,8 @@ function Home() {
               Crisstar Software
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Nuestra misión es proporcionar soluciones de software innovadoras y de alta calidad que permitan a nuestros clientes alcanzar sus objetivos empresariales de manera eficiente y efectiva. Nos esforzamos por ofrecer productos personalizados y servicios excepcionales que impulsan la transformación digital, mejoran la productividad y fomentan el crecimiento sostenible. 
-            A través de la colaboración estrecha con nuestros clientes y un compromiso inquebrantable con la excelencia, buscamos ser un socio confiable en su camino hacia el éxito tecnológico.
+              Nuestra misión es proporcionar soluciones de software innovadoras y de alta calidad que permitan a nuestros clientes alcanzar sus objetivos empresariales de manera eficiente y efectiva. Nos esforzamos por ofrecer productos personalizados y servicios excepcionales que impulsan la transformación digital, mejoran la productividad y fomentan el crecimiento sostenible. 
+              A través de la colaboración estrecha con nuestros clientes y un compromiso inquebrantable con la excelencia, buscamos ser un socio confiable en su camino hacia el éxito tecnológico.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="https://www.facebook.com/profile.php?id=61562362614037" className="text-sm font-semibold leading-6 text-gray-900">
@@ -126,131 +121,9 @@ function Home() {
         </div>
       </div>
 
-      {/* OTRO */}
-
-      <section>
-        <div >
-          <figure>
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-              <p>
-                “Programando la arquitectura de tus sueños”
-              </p>
-            </blockquote>
-            <figcaption >
-              <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-gray-900">Crisstar Software</div>
-                <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-gray-900">
-                  <circle r={1} cx={1} cy={1} />
-                </svg>
-                <div className="text-gray-600">Empresa desarrolladora</div>
-              </div>
-              <img
-                alt=""
-                src="\assets\logoCriss.png"
-                className="mx-auto mt-10 h-20 w-20 rounded-full"
-              />
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <Team></Team>
-
-      
-    {/* UBICACION */}
-    <section className="py-10">
-      
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div className="ml-8 bg-white rounded-lg shadow p-6">
-              <p className=" font-bold text-gray-900 sm:text-2xl mb-4 ">Dirección:</p>
-              <p className="text-sm text-gray-600">
-                Colonia colonial, callejon cerro hueco #A25 <br />
-                AV. El palmar y AV.Torreones <br />
-                C.P 29045
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3820.7918786965124!2d-93.09333482484963!3d16.73723308404329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDQ0JzE0LjAiTiA5M8KwMDUnMjYuNyJX!5e0!3m2!1ses!2smx!4v1720435112444!5m2!1ses!2smx"
-                width="550"
-                height="270"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    {/* REDES */}
-    <div className='mt-12 mb-12'>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-          Nos puedes encontrar en nuestras redes sociales
-        </h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <a href="https://www.facebook.com/profile.php?id=61562362614037">
-          <img
-            alt="facebook"
-            src="/assets/facebook.png"
-            width={158}
-            height={48}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            
-          /></a>
-          
-          <a href="https://www.tiktok.com/@crisstarsoftware">
-            <img
-              alt="tiktok"
-              src="\assets\tik-tok.png"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            />
-          </a>
-
-          <a href="https://x.com/crisstarSft">
-            <img
-              alt="twitter" 
-              href="./src//assets//logoCriss.png"
-              src="/assets/twitter.png"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            />
-          </a>
-
-          <a href="">
-          <img
-            alt="Instagram"
-            src="/assets/instagram.png"
-            width={158}
-            height={48}
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          /></a>
-
-          <a href="https://www.linkedin.com/in/crisstar-software/">
-            <img
-              alt="Linkedin"
-              src="/assets/linkedin.png"
-              width={158}
-              height={48}
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            />
-          </a>
-
-        </div>
-      </div>
+      <Team />
     </div>
-
-
-
-    </div>
-  )
+  );
 }
 
-export default Home
-
+export default Home;
