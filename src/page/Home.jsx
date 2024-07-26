@@ -35,9 +35,9 @@ function Home() {
           </div>
           <a href="/resQbite"></a>
           <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="/resQbite" className="text-sm font-semibold leading-6 text-gray-900">
-              Product
-            </Link>
+              <a key='Product' href='/resQbite' className="text-sm font-semibold leading-6 text-gray-900">
+                Product
+              </a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             
